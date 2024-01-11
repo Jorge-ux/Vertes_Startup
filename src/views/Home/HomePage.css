@@ -1,0 +1,19 @@
+/* HomePage.css */
+.home-container {
+  padding: 2rem;
+  text-align: center;
+}
+
+.home-container h1 {
+  margin-bottom: 1rem;
+  color: black;
+}
+
+.home-container p {
+  color: gray;
+}
+
+/* Si tienes un contenedor principal en tu App.js o HomePage.js */
+.main-content {
+  padding-top: 60px; /* Debes ajustar este valor dependiendo de la altura de tu navbar */
+}

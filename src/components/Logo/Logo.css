@@ -1,0 +1,13 @@
+/* Logo.css */
+.logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px; /* Ajusta el margen según tus necesidades */
+}
+
+.logo-text {
+  font-size: 2rem; /* Ajusta el tamaño de la fuente según tus necesidades */
+  color: #0073b1; /* El color del texto del logo */
+  /* Agrega cualquier otro estilo que quieras para tu logo */
+}

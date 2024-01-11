@@ -1,0 +1,75 @@
+/* Navbar.css */
+nav {
+  position: fixed; /* Esto hará que el navbar esté fijo en la parte superior */
+  top: 0; /* Alineado al borde superior */
+  left: 0; /* Alineado al borde izquierdo */
+  width: 100%; /* Ocupará toda la anchura de la pantalla */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem 1rem 3rem;
+  background: white; /* O el color que prefieras */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 10; /* Esto asegura que el navbar se mantenga sobre otros elementos */
+}
+
+.logo {
+  font-size: 1.5rem;
+  color: black; /* Adjust the color to match the branding */
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  gap: 50px;
+  padding-right: 180px;
+}
+
+ul li a {
+  text-decoration: none;
+  color: red; /* Adjust the color to match the reference image */
+  transition: color 0.3s;
+  font-size: 16px;
+}
+
+ul li a:hover {
+  text-decoration-line: underline;
+}
+
+.menu-icon {
+  display: none;
+}
+
+.mobile-menu-container {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: red;
+  z-index: 1000;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.active {
+  display: flex;
+}
+
+@media (max-width: 768px) {
+  .menu-icon {
+    display: block;
+  }
+
+  ul {
+    display: none;
+  }
+
+  .active ul {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+}
