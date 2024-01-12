@@ -13,7 +13,6 @@
   color: gray;
 }
 
-/* Si tienes un contenedor principal en tu App.js o HomePage.js */
 .main-content {
-  padding-top: 60px; /* Debes ajustar este valor dependiendo de la altura de tu navbar */
+  padding-top: 60px;
 }

@@ -2,7 +2,7 @@
   display: flex;
   justify-content: center;
   margin-top: 20px;
-  font-family: Arial, sans-serif; /* O la fuente que prefieras */
+  font-family: Arial, sans-serif;
 }
 
 .logo-container {
@@ -15,7 +15,7 @@
   display: flex;
   border: 1px solid #ccc;
   border-radius: 5px;
-  overflow: hidden; /* Para que el border-radius aplique a los hijos */
+  overflow: hidden;
 }
 
 .input-group {
@@ -29,15 +29,11 @@
   cursor: pointer;
 }
 
-.dropdown-icon {
-  /* Agrega estilos para tu icono de dropdown */
-}
-
 .search-input {
   padding: 10px;
   border: none;
   margin: 0;
-  height: 40px; /* Asegúrate de que coincida con la altura del botón de búsqueda */
+  height: 40px;
 }
 
 .search-button {
@@ -48,14 +44,8 @@
   cursor: pointer;
 }
 
-.search-button .search-icon {
-  /* Agrega estilos para tu icono de búsqueda */
-}
-
-/* Puedes agregar estilos para los estados hover y focus según sea necesario */
-
 .search-logo {
   background-color: red;
-  height: 1px; /* O la altura que prefieras */
-  margin-right: 50px; /* O el margen que prefieras */
+  height: 1px;
+  margin-right: 50px;
 }

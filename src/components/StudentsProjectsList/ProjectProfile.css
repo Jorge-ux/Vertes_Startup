@@ -1,17 +1,15 @@
-/* Si el Navbar tiene posición fija */
 .navbar-container {
-  position: fixed; /* O 'absolute' si no quieres que se quede siempre visible al desplazar */
-  width: 100%; /* Esto asegurará que el Navbar ocupe toda la anchura */
-  top: 0; /* Alinea el Navbar en la parte superior */
-  left: 0; /* Alinea el Navbar en la izquierda */
-  z-index: 1000; /* Asegura que el Navbar se muestre por encima del contenido */
+  position: fixed;
+  width: 100%;
+  left: 0;
+  z-index: 1000;
 }
 
 .project-profile-container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 60px; /* Ajuste este valor según la altura de tu Navbar */
+  margin-top: 60px;
   padding: 20px;
 }
 
