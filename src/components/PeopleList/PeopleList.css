@@ -1,0 +1,51 @@
+.people-list-container {
+  display: flexbox;
+  justify-content: center;
+  padding-left: 33%;
+  padding-top: 2rem;
+}
+
+.people-list-link {
+  text-decoration: none;
+  color: black;
+  display: flex;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid #ccc;
+  width: 50%;
+  padding-top: 2rem;
+}
+
+.people-list-link:hover {
+  background-color: #f5f5f5;
+}
+
+.people-list-link:hover .people-name {
+  text-decoration: underline;
+}
+
+.profile-image-placeholder {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: rgb(146, 162, 255);
+  margin-right: 15px;
+  /* background-image: url("ruta_a_la_imagen_de_perfil"); */
+  background-size: cover;
+}
+
+.people-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.people-name {
+  font-weight: bold;
+  margin: 0;
+  font-size: 1em;
+}
+
+.people-area {
+  font-size: 0.8em;
+  color: grey;
+}

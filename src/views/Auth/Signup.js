@@ -1,27 +1,85 @@
-import React, { useState } from "react";
+import React, { useState, useReducer, useCallback } from "react";
 import "./styles_auth.css"; // Asegúrate de crear este archivo CSS y añadir los estilos proporcionados previamente
 import Logo from "../../components/Logo/Logo";
+import { useDispatch } from "react-redux";
+import { signup } from "../../store/actions/auth";
+
+const FORM_INPUT_UPDATE = "FORM_INPUT_UPDATE";
+
+const formReducer = (state, action) => {
+  if (action.type === FORM_INPUT_UPDATE) {
+    const updatedValues = {
+      ...state.inputValues,
+      [action.input]: action.value,
+    };
+    const updatedValidities = {
+      ...state.inputValidities,
+      [action.input]: action.isValid,
+    };
+    let updatedFormIsValid = true;
+    for (const key in updatedValidities) {
+      updatedFormIsValid = updatedFormIsValid && updatedValidities[key];
+    }
+    return {
+      formIsValid: updatedFormIsValid,
+      inputValidities: updatedValidities,
+      inputValues: updatedValues,
+    };
+  }
+  return state;
+};
 
 const Signup = () => {
   const [email, setEmail] = useState("");
+  const [error, setError] = useState();
   const [password, setPassword] = useState("");
 
-  const handleSubmit = (event) => {
-    event.preventDefault();
-    // Aquí iría la lógica para manejar la creación del usuario, como una llamada API.
-    console.log("Form submitted:", { email, password });
+  const dispatch = useDispatch();
+
+  const [formState, dispatchFormState] = useReducer(formReducer, {
+    inputValues: {
+      email: "",
+      password: "",
+    },
+    inputValidities: {
+      email: false,
+      password: false,
+    },
+    formIsValid: false,
+  });
+
+  const loginHandler = async () => {
+    setError(null);
+    try {
+      await dispatch(
+        signup(formState.inputValues.email, formState.inputValues.password)
+      );
+    } catch (err) {
+      setError(err.message);
+    }
   };
+
+  const inputChangeHandler = useCallback(
+    (inputIdentifier, inputValue, inputValidity) => {
+      dispatchFormState({
+        type: FORM_INPUT_UPDATE,
+        value: inputValue,
+        isValid: inputValidity,
+        input: inputIdentifier,
+      });
+    },
+    [dispatchFormState]
+  );
 
   return (
     <>
       <Logo />
       <div className="signup-container">
         <header>
-          {/* Asegúrate de incluir tu logo aquí */}
-          <h2>Make the most of your professional life</h2>
+          <h2>Bienvenido</h2>
         </header>
 
-        <form className="signup-form" onSubmit={handleSubmit}>
+        <form className="signup-form" onSubmit={loginHandler}>
           <input
             type="email"
             id="email"
@@ -38,22 +96,12 @@ const Signup = () => {
             value={password}
             onChange={(e) => setPassword(e.target.value)}
           />
-          <p className="terms">
-            By clicking Agree & Join, you agree to the LinkedIn User Agreement,
-            Privacy Policy, and Cookie Policy.
-          </p>
+
           <button type="submit">Agree & Join</button>
           <p className="alternative">
-            Already on LinkedIn? <a href="/login">Sign in</a>
+            Already on RedCietificahub? <a href="/login">Sign in</a>
           </p>
         </form>
-
-        <footer>
-          <p>
-            Looking to create a page for a business?{" "}
-            <a href="/business">Get help</a>
-          </p>
-        </footer>
       </div>
     </>
   );

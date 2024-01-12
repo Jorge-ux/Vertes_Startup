@@ -27,7 +27,7 @@ ul {
 
 ul li a {
   text-decoration: none;
-  color: red; /* Adjust the color to match the reference image */
+  color: black; /* Adjust the color to match the reference image */
   transition: color 0.3s;
   font-size: 16px;
 }

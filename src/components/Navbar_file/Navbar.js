@@ -1,6 +1,13 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./Navbar.css";
+import {
+  EXPERTPAGE,
+  LOGIN,
+  SIGNUP,
+  STUDENTPAGE,
+  HOME,
+} from "../../config/paths";
 
 const Navbar = () => {
   const [isActive, setIsActive] = useState(false);
@@ -19,16 +26,22 @@ const Navbar = () => {
 
         <ul>
           <li>
-            <a href="#home">Home</a>
+            <Link to={HOME}>Home</Link>
           </li>
           <li>
             <a href="#about">About</a>
           </li>
           <li>
-            <Link to="/login">Log in</Link>
+            <Link to={LOGIN}>Log in</Link>
           </li>
           <li>
-            <Link to="/signup">Sign up</Link>
+            <Link to={SIGNUP}>Sign up</Link>
+          </li>
+          <li>
+            <Link to={STUDENTPAGE}>Search Experts</Link>
+          </li>
+          <li>
+            <Link to={EXPERTPAGE}> Experts</Link>
           </li>
         </ul>
 

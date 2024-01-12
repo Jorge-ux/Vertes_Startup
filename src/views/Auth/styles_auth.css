@@ -36,7 +36,7 @@
 }
 
 .signup-form button {
-  background-color: #0073b1; /* Color de fondo de LinkedIn */
+  background-color: #89bbf3;
   color: white;
   padding: 10px 15px;
   border: none;
@@ -45,7 +45,7 @@
 }
 
 .signup-form button:hover {
-  background-color: #005f86; /* Un tono más oscuro para el hover */
+  background-color: #005f86;
 }
 
 .signup-form .alternative {
@@ -54,7 +54,7 @@
 }
 
 .signup-form .alternative a {
-  color: #0073b1;
+  color: #802d3f;
   text-decoration: none;
 }
 
@@ -92,7 +92,7 @@ footer a:hover {
 }
 
 .login-form h2 {
-  color: #0073b1;
+  color: #000000;
 }
 
 .login-form p {
@@ -109,7 +109,7 @@ footer a:hover {
 .forgot-password {
   display: block;
   margin-bottom: 20px;
-  color: #0073b1;
+  color: #000000;
   text-decoration: none;
 }
 

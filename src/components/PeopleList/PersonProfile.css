@@ -1,0 +1,17 @@
+.person-card {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid #ccc;
+  padding: 20px;
+  background-color: grey;
+}
+
+.person-info h2 {
+  color: #0073b1;
+  margin-bottom: 5px;
+}
+
+.person-info p {
+  margin-bottom: 3px;
+  color: #333;
+}

@@ -1,0 +1,99 @@
+[
+  {
+    "ID": 1,
+    "Nombre": "Mar\u00eda",
+    "Apellido": "Gonz\u00e1lez",
+    "\u00c1rea de investigaci\u00f3n": "Biolog\u00eda Molecular",
+    "Habilidades o experiencias": [
+      "Secuenciaci\u00f3n de ADN",
+      "Edici\u00f3n gen\u00e9tica CRISPR"
+    ],
+    "costoServicios": 200,
+    "persona": "experto"
+  },
+  {
+    "ID": 2,
+    "Nombre": "Carlos",
+    "Apellido": "Mart\u00ednez",
+    "\u00c1rea de investigaci\u00f3n": "Inteligencia Artificial",
+    "Habilidades o experiencias": [
+      "Machine Learning",
+      "Procesamiento de lenguaje natural"
+    ],
+    "costoServicios": 250,
+    "persona": "experto"
+  },
+  {
+    "ID": 3,
+    "Nombre": "Juan",
+    "Apellido": "Rodr\u00edguez",
+    "\u00c1rea de investigaci\u00f3n": "Qu\u00edmica Org\u00e1nica",
+    "Habilidades o experiencias": [
+      "S\u00edntesis org\u00e1nica",
+      "Cromatograf\u00eda"
+    ],
+    "costoServicios": 150,
+    "persona": "experto"
+  },
+  {
+    "ID": 4,
+    "Nombre": "Laura",
+    "Apellido": "L\u00f3pez",
+    "\u00c1rea de investigaci\u00f3n": "F\u00edsica Te\u00f3rica",
+    "Habilidades o experiencias": [
+      "Mec\u00e1nica cu\u00e1ntica",
+      "Teor\u00eda de cuerdas"
+    ],
+    "costoServicios": 300,
+    "persona": "experto"
+  },
+  {
+    "ID": 5,
+    "Nombre": "Carmen",
+    "Apellido": "Hern\u00e1ndez",
+    "\u00c1rea de investigaci\u00f3n": "Neurociencia",
+    "Habilidades o experiencias": ["Neuroimagen", "Electrofisiolog\u00eda"],
+    "costoServicios": 180,
+    "persona": "experto"
+  },
+  {
+    "ID": 6,
+    "Nombre": "Ana",
+    "Apellido": "Ram\u00edrez",
+    "\u00c1rea de investigaci\u00f3n": "Biolog\u00eda Molecular",
+    "persona": "estudiante",
+    "Proyecto": "Secuenciaci\u00f3n de nuevas cepas bacterianas"
+  },
+  {
+    "ID": 7,
+    "Nombre": "Luis",
+    "Apellido": "Fern\u00e1ndez",
+    "\u00c1rea de investigaci\u00f3n": "Inteligencia Artificial",
+    "persona": "estudiante",
+    "Proyecto": "Aplicaci\u00f3n de IA en diagn\u00f3stico m\u00e9dico"
+  },
+  {
+    "ID": 8,
+    "Nombre": "Sof\u00eda",
+    "Apellido": "Castro",
+    "\u00c1rea de investigaci\u00f3n": "Qu\u00edmica Org\u00e1nica",
+    "persona": "estudiante",
+    "Proyecto": "S\u00edntesis de compuestos para farmac\u00e9utica"
+  },
+  {
+    "ID": 9,
+    "Nombre": "Miguel",
+    "Apellido": "\u00c1lvarez",
+    "\u00c1rea de investigaci\u00f3n": "F\u00edsica Te\u00f3rica",
+    "persona": "estudiante",
+    "Proyecto": "Modelos computacionales de part\u00edculas subat\u00f3micas"
+  },
+  {
+    "ID": 10,
+    "Nombre": "Claudia",
+    "Apellido": "Morales",
+    "\u00c1rea de investigaci\u00f3n": "Neurociencia",
+    "persona": "estudiante",
+    "Proyecto": "Mapeo de redes neuronales en aprendizaje"
+  }
+]
